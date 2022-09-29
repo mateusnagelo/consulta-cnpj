@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Kaushan+Script");
+body {
+    min-width: 372px;
+    background-color: rgb(13, 196, 196);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-text.truncar-3l {
+    font-style: normal;
+}
+
+.card-title {
+    font-family: roboto;
+    font-weight: bolder;
+}
+.flex-fill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50rem;
+   
+}
