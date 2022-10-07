@@ -1,48 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Consulta CNPJ</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Consulta</title>
 </head>
+
 <body>
+    <div class="container">
+        <div class="form-image">
 
-    <section class="flex-fill" id="form">
-        <div class="container">
-            <div class="row justify-content-center">
-                <form class="col-sm-10 col-md-8 col-lg-6">
-                    <div class="titulo"><h1>Consulta CNPJ</h1>
-                        <img class="img-consulta" src="./img/undraw_people_search_re_5rre.svg">
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="" class="form-control" id="cnpj" placeholder="CNPJ: 00.000.000/0000-00" >
-                        <button class="btn btn-success" type="submit" >Consultar</button>
-                      </div>
-
-                      <div class="input-group mb-3">
-                        <input type="" class="form-control" id="inscricao" placeholder="INSCRIÇÃO ESTADUAL: 000.000.000" >
-                        <button class="btn btn-success" type="submit" >Consultar</button>
-                      </div> 
+            <div class="titulo">
+                <h2 class="titulo">Consulta CNPJ</h2>
             </div>
+                <img class="img-consulta" src="./assets/img/pesquisei-xml-consulta-sefaz.png">
+
+                <div class="consulta-cnpj">
+                    
+                    <label for="cnpj">CNPJ:</label>
+                    <input id="cnpj" type="text" name="cnpj" placeholder="CNPJ: 00.000.000/0000-00" required>
+                    <button class="btn-consulta">Consultar</button>
+                </div>
+
         </div>
-    </section>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="./scripts/cnpj_ins.js"></script>
+
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Resultado:</h1>
+                    </div>
+                
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                   
+<!-- segundo form  -->
+
+
+
+<div class="input-group">
+    <div class="input-box">
+        <label for="firstname">Primeiro Nome</label>
+        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+    </div>
+
+    <div class="input-box">
+        <label for="lastname">Sobrenome</label>
+        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+    </div>
+    <div class="input-box">
+        <label for="email">E-mail</label>
+        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+    </div>
+
     
+
+<!-- terceira  -->
+
+
+<div class="input-group">
+    <div class="input-box">
+        <label for="firstname">Razão Social</label>
+        <input id="firstname" type="text" name="" placeholder="" required>
+    </div>
+
+    <div class="input-box">
+        <label for="lastname">Nome Fanasia</label>
+        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+    </div>
+    <div class="input-box">
+        <label for="email"> Inscrição Estatual</label>
+        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+    </div>
+
+    <div class="input-box">
+        <label for="number">Celular</label>
+        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+    </div>
+
+    <div class="input-box">
+        <label for="password">Senha</label>
+        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+    </div>
+
+
+    <div class="input-box">
+            <label for="confirmPassword">Confirme sua Senha</label>
+             <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+             </div>
+
+    </div>
+
+    <div class="input-box">
+        <label for="number">Celular</label>
+        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+    </div>
+
+    <div class="input-box">
+        <label for="password">Senha</label>
+        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+    </div>
+
+
+    <div class="input-box">
+            <label for="confirmPassword">Confirme sua Senha</label>
+             <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+             </div>
+
+    </div>
+
+    </div>  
+
+  </form>
+       
+</div>
+    
+</div>
+
 </body>
+
 </html>
